@@ -51,15 +51,18 @@ Note: The demo will run on GPU if a device is found, else it will use CPU.
 
 - Download [Recipe1M](http://im2recipe.csail.mit.edu/dataset/download) (registration required)
 - Extract files somewhere (we refer to this path as ```path_to_dataset```).
-- The contents of ```path_to_dataset``` should be the following:
+- SZ comment: path_to_dataset is '../../Kaggle data/', I've hardcoded this in the code already. The structure of your codebase should be:
 ```
-det_ingrs.json
-layer1.json
-layer2.json
-images/
-images/train
-images/val
-images/test
+gastroml/ (this project)
+Kaggle data/
+-- Food Images/ (where you download the original data images)
+-- images/ (use code in preprocess.py to copy original data images into train/val/test)
+---- train/
+---- val/
+---- test/
+-- final_data.csv
+-- final_data.json
+-- preprocess.py
 ```
 
 *Note: all python calls below must be run from ```./src```*
@@ -94,6 +97,7 @@ python train.py --model_name im2ingr --batch_size 150 --finetune_after 0 --ingrs
 --learning_rate 1e-4 --scale_learning_rate_cnn 1.0 \
 --save_dir ../checkpoints --recipe1m_dir path_to_dataset
 ```
+SZ comment: Full command wouldn't work for me, I had to tweak by setting some args manually in src/args.py.
 
 2. Recipe generation from images and ingredients (loading from 1.)
 
