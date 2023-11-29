@@ -55,7 +55,7 @@ Note: The demo will run on GPU if a device is found, else it will use CPU.
 ```
 gastroml/ (this project)
 Kaggle data/
--- Food Images/ (where you download the original data images)
+-- Food Images/Food Images/ (this will be created when you download the data images and extract here)
 -- images/ (use code in preprocess.py to copy original data images into train/val/test)
 ---- train/
 ---- val/
