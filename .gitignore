@@ -178,3 +178,5 @@ Quiz 1/20231105_231134.mp4
 Quiz 4/20231105_224904.mp4
 .tmp.driveupload/136617
 *tmp
+*.pyc
+*.ckpt
