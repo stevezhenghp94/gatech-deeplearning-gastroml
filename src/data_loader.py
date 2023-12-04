@@ -78,9 +78,9 @@ class Recipe1MDataset(data.Dataset):
         tokens.extend(title)
         # add fake token to separate title from recipe
         tokens.append('<eoi>')
-        for c in captions:
-            tokens.extend(c)
-            tokens.append('<eoi>')
+        #for c in captions:
+        #    tokens.extend(c)
+        #    tokens.append('<eoi>')
 
         ilabels_gt = np.ones(self.max_num_labels) * self.ingrs_vocab('<pad>')
         pos = 0
