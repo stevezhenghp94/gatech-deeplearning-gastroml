@@ -180,3 +180,4 @@ Quiz 4/20231105_224904.mp4
 *tmp
 *.pyc
 *.ckpt
+src/my_checkpoint.pth.tar
