@@ -181,3 +181,5 @@ Quiz 4/20231105_224904.mp4
 *.pyc
 *.ckpt
 src/my_checkpoint.pth.tar
+Kaggle data/glove.6B.200d.txt
+Kaggle data/glove.6B.200d.txt.zip

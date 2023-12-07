@@ -59,7 +59,47 @@ def print_examples(model, device, dataset):
     print("Example 6 CORRECT: Chicken enchiladas")
     print(
         "Example 6 OUTPUT: "
-        + " ".join(model.caption_image(test_img5.to(device), dataset.vocab))
+        + " ".join(model.caption_image(test_img6.to(device), dataset.vocab))
+    )
+    test_img7 = transform(
+        Image.open(
+            "../Kaggle data/Food Images/Food Images/3-ingredient-caramel-apple-hand-pies.jpg"
+        ).convert("RGB")
+    ).unsqueeze(0)
+    print("Example 7 CORRECT: Caramel apple hand pies")
+    print(
+        "Example 7 OUTPUT: "
+        + " ".join(model.caption_image(test_img7.to(device), dataset.vocab))
+    )
+    test_img8 = transform(
+        Image.open(
+            "../Kaggle data/Food Images/Food Images/watermelon-with-yogurt-poppy-seeds-and-fried-rosemary.jpg"
+        ).convert("RGB")
+    ).unsqueeze(0)
+    print("Example 8 CORRECT: Watermelon with yogurt, poppy seeds and fried rosemary")
+    print(
+        "Example 8 OUTPUT: "
+        + " ".join(model.caption_image(test_img8.to(device), dataset.vocab))
+    )
+    test_img9 = transform(
+        Image.open(
+            "../Kaggle data/Food Images/Food Images/texas-style-barbecued-brisket-242249.jpg"
+        ).convert("RGB")
+    ).unsqueeze(0)
+    print("Example 9 CORRECT: Texas style barbecued brisket")
+    print(
+        "Example 9 OUTPUT: "
+        + " ".join(model.caption_image(test_img9.to(device), dataset.vocab))
+    )
+    test_img10 = transform(
+        Image.open(
+            "../Kaggle data/Food Images/Food Images/berry-explosion-muffins.jpg"
+        ).convert("RGB")
+    ).unsqueeze(0)
+    print("Example 10 CORRECT: Berry explosion muffins")
+    print(
+        "Example 10 OUTPUT: "
+        + " ".join(model.caption_image(test_img10.to(device), dataset.vocab))
     )
     model.train()
 
