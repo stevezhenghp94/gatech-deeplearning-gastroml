@@ -1,0 +1,10 @@
+/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 8 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/usr/local/lib/python3.10/dist-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet50_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet50_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Downloading: "https://download.pytorch.org/models/resnet50-0676ba61.pth" to /root/.cache/torch/hub/checkpoints/resnet50-0676ba61.pth
+  0%|          | 0.00/97.8M [00:00<?, ?B/s]  5%|▍         | 4.73M/97.8M [00:00<00:01, 49.6MB/s] 14%|█▍        | 14.0M/97.8M [00:00<00:01, 77.3MB/s] 25%|██▌       | 24.9M/97.8M [00:00<00:00, 94.5MB/s] 37%|███▋      | 36.3M/97.8M [00:00<00:00, 104MB/s]  48%|████▊     | 47.4M/97.8M [00:00<00:00, 109MB/s] 60%|██████    | 58.7M/97.8M [00:00<00:00, 112MB/s] 72%|███████▏  | 70.1M/97.8M [00:00<00:00, 114MB/s] 83%|████████▎ | 81.4M/97.8M [00:00<00:00, 116MB/s] 94%|█████████▍| 92.4M/97.8M [00:00<00:00, 115MB/s]100%|██████████| 97.8M/97.8M [00:00<00:00, 103MB/s]
+/usr/local/lib/python3.10/dist-packages/torch/nn/_reduction.py:42: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))

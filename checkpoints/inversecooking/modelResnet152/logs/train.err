@@ -1,0 +1,14 @@
+/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py:557: UserWarning: This DataLoader will create 8 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/usr/local/lib/python3.10/dist-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/usr/local/lib/python3.10/dist-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet152_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet152_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Downloading: "https://download.pytorch.org/models/resnet152-394f9c45.pth" to /root/.cache/torch/hub/checkpoints/resnet152-394f9c45.pth
+  0%|          | 0.00/230M [00:00<?, ?B/s]  3%|▎         | 7.27M/230M [00:00<00:03, 76.2MB/s] 11%|█         | 25.5M/230M [00:00<00:01, 144MB/s]  19%|█▉        | 44.0M/230M [00:00<00:01, 167MB/s] 27%|██▋       | 62.0M/230M [00:00<00:01, 176MB/s] 34%|███▍      | 78.8M/230M [00:00<00:01, 122MB/s] 40%|████      | 92.2M/230M [00:00<00:01, 108MB/s] 45%|████▌     | 104M/230M [00:00<00:01, 105MB/s]  50%|████▉     | 115M/230M [00:01<00:01, 106MB/s] 54%|█████▍    | 125M/230M [00:01<00:01, 106MB/s] 59%|█████▉    | 136M/230M [00:01<00:00, 105MB/s] 63%|██████▎   | 146M/230M [00:01<00:01, 81.8MB/s] 67%|██████▋   | 155M/230M [00:01<00:01, 56.0MB/s] 71%|███████   | 164M/230M [00:01<00:01, 63.5MB/s] 75%|███████▌  | 173M/230M [00:01<00:00, 69.7MB/s] 79%|███████▊  | 181M/230M [00:02<00:00, 69.7MB/s] 83%|████████▎ | 192M/230M [00:02<00:00, 80.0MB/s] 87%|████████▋ | 200M/230M [00:02<00:00, 81.8MB/s] 91%|█████████ | 209M/230M [00:02<00:00, 83.4MB/s] 95%|█████████▌| 219M/230M [00:02<00:00, 90.5MB/s] 99%|█████████▉| 228M/230M [00:02<00:00, 90.2MB/s]100%|██████████| 230M/230M [00:02<00:00, 91.9MB/s]
+/usr/local/lib/python3.10/dist-packages/torch/nn/_reduction.py:42: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+/usr/local/lib/python3.10/dist-packages/numpy/core/fromnumeric.py:3432: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/usr/local/lib/python3.10/dist-packages/numpy/core/_methods.py:190: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
