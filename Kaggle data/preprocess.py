@@ -21,6 +21,7 @@ df.columns = [
 df_filtered = df[~df["instructions"].isnull()].reset_index(drop=True)
 
 import nltk
+nltk.download('punkt')
 import re
 
 stop_words = [
@@ -124,7 +125,9 @@ df_filtered.to_csv(
 )
 
 #####  Convert to JSON  #####
-# From CLEANED to final_dat, the only change was adding a 'partition' column. I partitioned in Excel, 60/20/20 for train/val/test
+# From CLEANED to final_dat, the following changes were made in Excel:
+# 1. adding a 'partition' column. Partitioned 60/20/20 for train/val/test
+# 2. removing rows where 'Ingredients_RawMats' is an empty list
 csv_file = pd.DataFrame(
     pd.read_csv("final_data.csv", sep=",", header=0, index_col=False)
 )
